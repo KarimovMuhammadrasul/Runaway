@@ -60,4 +60,15 @@ function predictLoop(landmarker) {
   }
   requestAnimationFrame(() => predictLoop(landmarker));
 }
-window.addEventListener("click", () => { if (!audioCtx) setup(); }, { once: true });
+window.addEventListener("click", async () => {
+  if (!audioCtx) {
+    try {
+      await setup();
+      document.getElementById("msg").innerText = "INITIALIZED.";
+    } catch (err) {
+      console.error("Setup failed:", err);
+      document.getElementById("msg").innerText = "ERROR: " + err.message;
+      alert("Permission denied or device not found. Please check your webcam settings.");
+    }
+  }
+}, { once: true });
