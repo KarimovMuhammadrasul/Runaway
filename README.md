@@ -8,6 +8,8 @@
 
 **Runaway** is a browser-based creative experiment that uses real-time computer vision to turn your hands into a musical instrument. Inspired by the aesthetic of "**My Beautiful Dark Twisted Fantasy**", it features a black-and-skin-tone skeletal interface that acts as a metaphor for the album's iconic cover dancer—transforming your hands into the performance itself.
 ## How to Play
+[Try the Live Demo](https://karimovmuhammadrasul.github.io/Runaway/)
+
 Click the screen to begin:
 
 * **Left Hand:** Curl fingers to trigger samples.
@@ -19,5 +21,7 @@ This project is built for the web, integrating:
 * **MediaPipe:** For precise, real-time hand tracking.
 * **Web Audio API:** For sound synthesis and playback.
 * **Custom CSS:** To achieve the project’s signature crimson-and-gold visual style.
+  
+
 
 Enjoy the music.
